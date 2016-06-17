@@ -51,19 +51,8 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-<<<<<<< Updated upstream
-$db['default']['database'] = 'thainology';
-
-// $db['default']['hostname'] = 'svr002';
-// $db['default']['username'] = 'thainology';
-// $db['default']['password'] = 'thainology';
-// $db['default']['database'] = 'thainology';
-
-$db['default']['dbdriver'] = 'mysql';
-=======
 $db['default']['database'] = 'assignment';
 $db['default']['dbdriver'] = 'mysqli';
->>>>>>> Stashed changes
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
