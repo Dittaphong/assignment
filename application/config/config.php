@@ -14,7 +14,12 @@
 | path to your installation.
 |
 */
+<<<<<<< Updated upstream
 $config['base_url']	= 'http://localhost/todolist';
+=======
+$config['base_url']	= 'http://localhost/assignment/';
+
+>>>>>>> Stashed changes
 /*
 |--------------------------------------------------------------------------
 | Index File
