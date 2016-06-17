@@ -21,7 +21,7 @@ class Template_authen {
         <link rel="stylesheet" href="'.base_url().'bootstrap/css/login.css">
 </head>
 <body>
-   <div class="row" style="background:#34495E">
+   <div class="row" style="background:#2f394a">
      
            <div style="padding-left:70px; margin-top:-5px;">
                   <h3>

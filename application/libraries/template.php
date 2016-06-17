@@ -21,8 +21,8 @@ class Template {
                <script src="'.base_url().'bootstrap/js/bootstrap.min.js"></script> 
                  <link rel="stylesheet" href="'.base_url().'bootstrap/css/aon.css">
          </head>
-         <body>
-         <div class="row" style="background:#34495E">
+         <body style="background:#52596b">
+         <div class="row" style="background:#2f394a">
             <div class="col-nd-12">
                <div class="col-md-8" >
                <div style="padding-left:70px; margin-top:-5px;">
@@ -59,7 +59,7 @@ class Template {
    public function getFooter()
    {
       return '</div> <!-- close container -->
-            <div class="well well-lg">
+            <div class="wellaon well-lg">
                <center>
                   <font class="" color="#9B9B9B">Copyright © Thainology and Solutions Co.,Ltd. </font><br>
                   <font color="#9B9B9B">http://www.thainology.com</font>
