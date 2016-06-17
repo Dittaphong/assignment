@@ -5,7 +5,7 @@
 				 </div>
 					  <p>คุณต้องทำอะไรบ้างวันนี้...</p> 
 			<center>
-			<div class="row myBox" >
+			<div class="row " >
 		    	<div class="col-md-12">
 		    		<div class="content-table">
 		    		<table class="box-table">
@@ -56,15 +56,123 @@
 								       
 								      </select>
 								</td>
-						        <td><input type="text" class="form-control" id="sm " style="width:70px;"></td>
-						         <td><input type="text" class="form-control" id="sm " style="width:70px;"></td>
-						        <td><input type="text" class="form-control" id="sm " style="width:70px;"></td>
+						        <td><input type="text" class="form-control" id="sm " style="width:100%;"></td>
+						         <td><input type="text" class="form-control" id="sm " style="width:100%;"></td>
+						        <td><input type="text" class="form-control" id="sm " style="width:100;"></td>
 					      	 </tr>
 					    </tbody>
 					 </table>
 					 </div>
 		    	</div>
 		    </div> 
+		    <!-- cosle Table head -->
+		    <br>
+				<table class="table table-striped">
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+					      <td>หัวข้อ</td>
+					      <td>โครงการ</td>
+					      <td>รายละเอียด</td>
+					      <td>ระดับความสำคัญ</td>
+					      <td>สถานะ</td>
+					      <td>ผู้มอบหมาย</td>
+					      <td>เสร็จในวันที่</td>
+					       <td>เริ่ม</td>
+					      <td>เสร็จสิ้น</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+					       <td>หัวข้อ</td>
+					      <td>โครงการ</td>
+					      <td>รายละเอียด</td>
+					      <td>ระดับความสำคัญ</td>
+					      <td>สถานะ</td>
+					      <td>ผู้มอบหมาย</td>
+					      <td>เสร็จในวันที่</td>
+					      <td>เริ่ม</td>
+					      <td>เสร็จสิ้น</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+					       <td>หัวข้อ</td>
+					      <td>โครงการ</td>
+					      <td>รายละเอียด</td>
+					      <td>ระดับความสำคัญ</td>
+					      <td>สถานะ</td>
+					      <td>ผู้มอบหมาย</td>
+					      <td>เสร็จในวันที่</td>
+					      <td>เริ่ม</td>
+					      <td>เสร็จสิ้น</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">4</th>
+					       <td>หัวข้อ</td>
+					      <td>โครงการ</td>
+					      <td>รายละเอียด</td>
+					      <td>ระดับความสำคัญ</td>
+					      <td>สถานะ</td>
+					      <td>ผู้มอบหมาย</td>
+					      <td>เสร็จในวันที่</td>
+					      <td>เริ่ม</td>
+					      <td>เสร็จสิ้น</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">5</th>
+					       <td>หัวข้อ</td>
+					      <td>โครงการ</td>
+					      <td>รายละเอียด</td>
+					      <td>ระดับความสำคัญ</td>
+					      <td>สถานะ</td>
+					      <td>ผู้มอบหมาย</td>
+					      <td>เสร็จในวันที่</td>
+					      <td>เริ่ม</td>
+					      <td>เสร็จสิ้น</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">6</th>
+					       <td>หัวข้อ</td>
+					      <td>โครงการ</td>
+					      <td>รายละเอียด</td>
+					      <td>ระดับความสำคัญ</td>
+					      <td>สถานะ</td>
+					      <td>ผู้มอบหมาย</td>
+					      <td>เสร็จในวันที่</td>
+					      <td>เริ่ม</td>
+					      <td>เสร็จสิ้น</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<div class="table-responsive">
+				  <table class="table">
+				    <tbody>
+				    	<tr> 
+					    	<td>ทำอะไรดี</td>
+					    	<td>ก็ไม่รู้สินะ</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+						</tr>
+						<tr> 
+					    	<td>ทำอะไรดี</td>
+					    	<td>ก็ไม่รู้สินะ</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+					    	<td>ใส่รายละเอียด</td>
+						</tr>
+				    </tbody>
+				  </table>
+				</div>
 		    </center> 
 	    </div>
 </body>

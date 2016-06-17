@@ -59,10 +59,10 @@ class Template {
    public function getFooter()
    {
       return '</div> <!-- close container -->
-            <div class="wellaon well-lg">
+            <div class="wellaon wellaon-lg">
                <center>
-                  <font class="" color="#9B9B9B">Copyright © Thainology and Solutions Co.,Ltd. </font><br>
-                  <font color="#9B9B9B">http://www.thainology.com</font>
+                  <font class="" color="#9fa2ac">Copyright © Thainology and Solutions Co.,Ltd. </font><br>
+                  <font color="#9fa2ac">http://www.thainology.com</font>
                </center>
                   
             </div>

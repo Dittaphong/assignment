@@ -36,7 +36,7 @@ class Template_authen {
    {
       return '
       </div> <!-- /container -->
-    <p class="bg-info"><center><font style="color:#DAD7D7; ">Thainology and Solutions Co.,Ltd</font></center></p>
+    <p class="bg-info"><center><font style="color:#9fa2ac; ">Thainology and Solutions Co.,Ltd</font></center></p>
       </body>
 </html>
  ';
