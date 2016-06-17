@@ -52,6 +52,12 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'thainology';
+
+// $db['default']['hostname'] = 'svr002';
+// $db['default']['username'] = 'thainology';
+// $db['default']['password'] = 'thainology';
+// $db['default']['database'] = 'thainology';
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
