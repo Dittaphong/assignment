@@ -14,11 +14,17 @@ class Template {
              
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
               <!-- Latest compiled and minified CSS -->
-               <link rel="stylesheet" href="'.base_url().'bootstrap/css/bootstrap.min.css">
-               <link rel="stylesheet" href="'.base_url().'bootstrap/css/bootstrap-theme.min.css">   
-                <!-- Latest compiled and minified JavaScript -->
-               <script src="'.base_url().'bootstrap/js/bootstrap.min.js"></script> 
+                 <link rel="stylesheet" href="'.base_url().'bootstrap/css/bootstrap.min.css">
+                 <link rel="stylesheet" href="'.base_url().'bootstrap/css/bootstrap-theme.min.css">   
+                 
+                  <!-- Latest compiled and minified JavaScript -->
+                
+                  <script src="'.base_url().'bootstrap/js/jquery.js"></script>
+                  <script src="'.base_url().'bootstrap/js/bootbox.min.js"></script>
+                 <script src="'.base_url().'bootstrap/js/bootstrap.min.js"></script> 
+
                  <link rel="stylesheet" href="'.base_url().'bootstrap/css/aon.css">
          </head>
          <body style="background:#52596b">
@@ -40,8 +46,8 @@ class Template {
                   </div>
                   <div class="row" style="float: right; padding:3px 60px 0 0; ">
                      <div class="col-md-12">
-                        <a href="#"><img src="'.base_url().'/images/icon/home.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px; "></a>
-                        <a href="#"><img src="'.base_url().'/images/icon/user-512.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px;"></a>
+                        <a href="'.base_url().'ctl_home/"><img src="'.base_url().'/images/icon/home.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px; "></a>
+                        <a href="'.base_url().'ctl_todo/"><img src="'.base_url().'/images/icon/user-512.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px;"></a>
                         <a href="#"><img src="'.base_url().'/images/icon/project.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px;"></a>
                         <a href="#"><img src="'.base_url().'/images/icon/timeSh.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px;"></a>
                         <a href="#"><img src="'.base_url().'/images/icon/ioTime.png" alt="Mountain View" style="width:30px;height:28px; margin-right:5px;"></a>
@@ -70,7 +76,5 @@ class Template {
 </html>
 ';
    }
-
-
 }
 ?>

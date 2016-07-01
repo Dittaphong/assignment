@@ -1,4 +1,4 @@
-<?php 
+<?php  
 class mdl_memp extends CI_Model
    {
 	public function __construct()
@@ -23,6 +23,19 @@ class mdl_memp extends CI_Model
             return false;
          }
       }
+
+      public function showname(){
+        $sql = "
+   SELECT memp_id, firstname_th, lastname_th, email
+       FROM memp 
+      WHERE firstname_th "  ;
+  // echo $sql;
+     $query = $this->db->query($sql);
+     return $query->row(); 
+
+      }
+
+
 
       public function getMempID($username)
       {
@@ -92,85 +105,8 @@ class mdl_memp extends CI_Model
 		LEFT JOIN memp_cat c ON a.id_memp_cat=c.id_memp_cat
 	    WHERE a.memp_id='$memp_id' " ;
 //   echo $sql;
-         $query = $this->db->query($sql);
+     $query = $this->db->query($sql);
  		 return $query->row(); 
 	  }
 
    }
-
-
-public function getHistoryInOut($memp_id, $month,$year)
-      {
-          $sql = "
-        SELECT 
-         a.mwkd_date,
-         a.is_working,
-         a.name_th AS wkd_name,
-         b.record_date,
-         b.LOGIN,
-         b.comment_login,
-         b.LOGOUT,
-         b.comment_logout
-         FROM mwkd a
-         LEFT JOIN(
-            SELECT 
-               date_list.record_date, 
-               login.record_time LOGIN, 
-               login.comment_login, 
-               logout.record_time LOGOUT,
-               logout.comment_logout
-            FROM
-               (
-                 SELECT 
-                   DISTINCT(record_date) record_date
-                 FROM
-                    memp_login 
-                 WHERE  MONTH (record_date) = " . $month . "
-                 AND YEAR (record_date) = " . $year . " ";
-                if($memp_id !=""){
-                  $sql .="  AND memp_id =" . $memp_id . "";
-                }
-                $sql .="  ORDER BY record_date
-               ) AS date_list
-               LEFT JOIN
-               (
-                 SELECT 
-                   record_date, record_time,comment_login
-                 FROM memp_login
-                 WHERE MONTH (record_date) = " . $month . "
-                 AND YEAR (record_date) = " . $year . " ";
-             if($memp_id !=""){
-                  $sql .="  AND memp_id =" . $memp_id . " ";
-                }
-               $sql .="    AND islogin = 1
-               ) AS login
-               ON date_list.record_date = login.record_date
-               LEFT JOIN
-               (
-                 SELECT 
-                   record_date, record_time,comment_logout
-                 FROM memp_login
-                 WHERE MONTH (record_date) = " . $month . "
-                 AND YEAR (record_date) = " . $year . " ";
-                if($memp_id !=""){
-                  $sql .="  AND memp_id =" . $memp_id . " ";
-                }
-               $sql .="    AND islogin = 2
-               ) AS logout
-               ON date_list.record_date = logout.record_date 
-               
-               ) AS b ON a.mwkd_date=b.record_date
-               WHERE MONTH(a.mwkd_date)=" . $month . "
-               AND YEAR(a.mwkd_date)=" . $year . "  
-               AND a.mwkd_date <= now() ";
-
-     // echo $sql;
-                   $query = $this->db->query($sql);
-                   return $query->result_array(); 
-      }
-      public function getHistoryInOutAll($sql)
-      {
-      //  echo "<pre>$sql</pre>";
-          $query = $this->db->query($sql);
-          return $query->result_array(); 
-      }
